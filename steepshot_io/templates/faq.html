@@ -222,7 +222,7 @@
     </ul>
 <script>
 $(document).ready(function(){
-    $(".ul-faq li").click(function() {
+    $(".ul-faq li").on('click touch',function() {
         $(this).find('div#panel-faq').slideToggle("slow");
     });
 });
