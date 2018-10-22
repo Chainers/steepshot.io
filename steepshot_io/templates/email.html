@@ -9,21 +9,27 @@
             <td>Email</td>
             <td>{{ email }}</td>
         </tr>
-        <tr>
-            <td>Project name</td>
-            <td>{{ project_name }}</td>
-        </tr>
+        {% if project_name %}
+            <tr>
+                <td>Project name</td>
+                <td>{{ project_name }}</td>
+            </tr>
+        {% endif %}
         <tr>
             <td>Description</td>
             <td>{{ description }}</td>
         </tr>
-        <tr>
-            <td>Duration</td>
-            <td>{{ duration }}</td>
-        </tr>
-        <tr>
-            <td>Urgency</td>
-            <td>{{ urgency }}</td>
-        </tr>
+        {% if duration %}
+            <tr>
+                <td>Duration</td>
+                <td>{{ duration }}</td>
+            </tr>
+        {% endif %}
+        {% if urgency %}
+            <tr>
+                <td>Urgency</td>
+                <td>{{ urgency }}</td>
+            </tr>
+        {% endif %}
     </tbody>
 </table>
