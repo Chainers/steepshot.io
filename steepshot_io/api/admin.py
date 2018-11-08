@@ -5,4 +5,4 @@ from steepshot_io.api.models import WorkRequest
 
 @admin.register(WorkRequest)
 class WorkRequestAdmin(admin.ModelAdmin):
-    list_display = ('name', 'email', 'project_name', 'duration', 'urgency')
+    list_display = ('name', 'email', 'project_name', 'duration', 'urgency', 'created_at')

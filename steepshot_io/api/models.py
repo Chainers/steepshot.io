@@ -39,4 +39,4 @@ class WorkRequest(models.Model):
     description = models.TextField()
     duration = models.CharField(max_length=7, choices=DURATION_CHOICES)
     urgency = models.CharField(max_length=7, choices=URGENCY_CHOICES)
-
+    created_at = models.DateTimeField(auto_now_add=True)

@@ -23,6 +23,7 @@ class WorkRequestSerializer(serializers.ModelSerializer):
             'description': data.get('description', ''),
             'duration': duration,
             'urgency': urgency,
+            'created_at': data.get('created_at', '')
         }
         content = render_to_string('email.html', context)
         send_email.delay(content, self._emails)
