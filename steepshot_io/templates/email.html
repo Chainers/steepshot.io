@@ -31,5 +31,11 @@
                 <td>{{ urgency }}</td>
             </tr>
         {% endif %}
+        {% if urgency %}
+            <tr>
+                <td>Request date</td>
+                <td>{{ created_at }}</td>
+            </tr>
+        {% endif %}
     </tbody>
 </table>
